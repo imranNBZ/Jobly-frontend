@@ -1,0 +1,131 @@
+/* ==== GLOBAL STYLING ==== */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', 'Roboto', 'Oxygen', 'Helvetica Neue', sans-serif;
+  background-image: url('https://images.unsplash.com/photo-1531497865144-0464ef8fb9a5?auto=format&fit=crop&w=1600&q=80');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #212529;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* add semi-transparent background to content */
+.App, .container {
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ==== CODE BLOCKS ==== */
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+/* ==== FORM ELEMENTS ==== */
+input:focus,
+input:active,
+button:focus,
+button:active,
+textarea:focus {
+  box-shadow: none !important;
+  outline: none;
+}
+
+label {
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+/* ==== HEADINGS ==== */
+h1, h2, h3, h4 {
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+/* ==== BUTTONS ==== */
+button,
+.btn {
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+
+/* ==== CARD STYLING ==== */
+.card {
+  border: none;
+  border-radius: 0.75rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+  margin-bottom: 1.5rem;
+}
+
+/* ==== NAVIGATION ==== */
+.navbar {
+  background-color: #343a40;
+}
+
+.navbar-brand,
+.nav-link {
+  color: black !important;
+}
+
+.nav-link:hover {
+  color: #ffc107 !important;
+}
+
+
+/* DARK MODE BASE */
+body.dark-mode {
+  background-color: #1e1e2f;
+  color: black;
+}
+
+/* Navbar */
+body.dark-mode .navbar {
+  background-color: #2c2c3c;
+}
+body.dark-mode .navbar .nav-link,
+body.dark-mode .navbar .navbar-brand {
+  color: #f1f1f1 !important;
+}
+body.dark-mode .navbar .nav-link:hover {
+  color: #ffc107 !important;
+}
+
+/* Cards */
+body.dark-mode .card {
+  background-color: #2a2a3b;
+  color: #f1f1f1;
+}
+
+/* Buttons */
+body.dark-mode .btn {
+  background-color: #444 !important;
+  color: #f1f1f1;
+  border-color: #666;
+}
+body.dark-mode .btn:hover {
+  background-color: #555 !important;
+}
+
+/* Form inputs */
+body.dark-mode input,
+body.dark-mode textarea,
+body.dark-mode select {
+  background-color: #333;
+  color: #f1f1f1;
+  border: 1px solid #666;
+}
+
+/* Toggle Button */
+.theme-toggle {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 999;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
